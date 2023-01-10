@@ -1,0 +1,44 @@
+<form class="font-monospace py-5 px-5" action="" [formGroup]="formLogin">
+    <div class="row">
+        <div class="col text-center">
+            <h2>FORMULARIO DE CONTACTO</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="">Nombre:</label><br>
+            <input class="form-control" type="text" formControlName="name">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" >
+            <label for="">Apellidos:</label><br>
+            <input class="form-control" type="text" formControlName="surname">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="">DNI:</label><br>
+            <input class="form-control" type="text" formControlName="DNI">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="">Ciudad:</label><br>
+            <input class="form-control" type="text" formControlName="city">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <label for="">Ciudad:</label><br>
+            <input class="form-control" type="text" formControlName="city">
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col py-2">
+          <button class="btn btn-primary" type="submit"  [disabled]="formLogin.invalid">Submit</button>
+        </div>
+    </div>
+    {{formLogin.valid}}
+</form>
+
